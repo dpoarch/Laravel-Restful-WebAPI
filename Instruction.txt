@@ -1,0 +1,31 @@
+#INSTALLATION
+# laravel version should be 5.8^ or greater
+# open your command line and run composer install
+# create a database named restapi in your phpmyadmin
+# open .env file
+        
+        DB_CONNECTION=mysql
+	DB_HOST=127.0.0.1
+	DB_DATABASE=restapi
+	DB_USERNAME=root
+	DB_PASSWORD=
+
+# run on your cli php artisan migrate
+# also run on your cli php artisan db:seed
+# run this on your cli php artisan generate:key
+# to view routes type on your cli php artisan route:list
+
+WEB API[route list]:
+
+get: /users/{id}
+get: /users  #get all users
+post: /users
+delete: users/{id}
+
+//articles
+
+get: /articles
+post: /article/1
+put: /article
+delete: /article/{id}
+
